@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="arrow_left_black32.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="9.3671874"
+     inkscape:cx="6.7256047"
+     inkscape:cy="12.970809"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1" />
+  <g
+     id="Icons"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     transform="matrix(-2.6502641,0,0,2.6502641,23.77594,0.3287492)">
+    <g
+       id="Rounded"
+       transform="translate(-687,-2464)">
+      <g
+         id="Hardware"
+         transform="translate(100,2404)">
+        <g
+           id="-Round-/-Hardware-/-keyboard_arrow_right"
+           transform="translate(578,54)">
+          <g
+             id="g2">
+            <rect
+               id="Rectangle-Copy-105"
+               x="0"
+               y="0"
+               width="24"
+               height="24" />
+            <path
+               d="M 9.29,15.88 13.17,12 9.29,8.12 C 8.9,7.73 8.9,7.1 9.29,6.71 c 0.39,-0.39 1.02,-0.39 1.41,0 l 4.59,4.59 c 0.39,0.39 0.39,1.02 0,1.41 L 10.7,17.3 c -0.39,0.39 -1.02,0.39 -1.41,0 -0.38,-0.39 -0.39,-1.03 0,-1.42 z"
+               id="🔹-Icon-Color"
+               fill="#1d1d1d" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

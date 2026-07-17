@@ -1,0 +1,43 @@
+*{
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    --mg-color: #1dcfa0;
+    --md-color: #2a2e39;
+    --w-color: #f5f5f5;
+    --dg-color: #025750;
+    --mr-color: #f02f5b;
+    --dr-color: #b51541;
+    --lb-color: #74baae;
+    --db-color: #1f625f;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.h4-bold {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.h4-regular {
+    font-size: 32px;
+    font-weight: 400;
+}
