@@ -77,10 +77,28 @@ main {
     justify-content: center;
 }
 
-.course_module_header{
-    height: 50px;
+.course_module_header_container{
+    height: 55px;
     margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dg-color);
 }
+
+.module_circle_border {
+    width: 55px;
+    height: 55px;
+    border: 4px solid currentColor;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+}
+
 
 .course_module{
     width: auto;
@@ -92,6 +110,7 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-weight: bold;
 }
 
 .course_module p{

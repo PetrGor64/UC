@@ -8,6 +8,7 @@ footer{
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
 }
 
@@ -23,7 +24,7 @@ footer{
 .footer_lic{
     margin-right: 50px;
     flex: 1;
-    min-width: 0;
+    min-width: 200px;
 }
 
 footer ul{
@@ -45,4 +46,51 @@ footer a:hover{
 
 .lic{
     text-align: center;
+}
+
+/* Планшеты */
+@media (max-width: 900px) {
+
+    .footer_container {
+        gap: 30px;
+    }
+
+    .footer_nav,
+    .footer_contact_info,
+    .footer_lic {
+        flex: 1 1 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .footer_nav ul,
+    .footer_contact_info ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+
+/* Телефоны */
+@media (max-width: 600px) {
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer_container {
+        gap: 20px;
+    }
+
+    .lic {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    footer a {
+        font-size: 16px;
+    }
+
 }
