@@ -26,7 +26,8 @@
                 <ul class="contact_info_top_bar">
                     <li><a href="tel:+79607825050">+7 (960) 782-50-50</a></li>
                     <li><a href="mailto:ucit@corp.nstu.ru">ucit@corp.nstu.ru</a></li>
-                    <li><a href="https://t.me/ucitorg" target="_blank">t.me/ucitorg</a></li>    
+                    <li><a href="https://t.me/ucitorg" target="_blank">t.me/ucitorg</a></li>
+                    <li><a href="tel:+79607825050" target="_blank">MAX</a></li>
                 </ul>
             </address>
         </div>
@@ -43,55 +44,65 @@
     </header>
     <main>
         <div class="page_container">
+            <div class="modal" id="newsModal">
+                <div class="modal_content">
+                    <span class="close">&times;</span>
+                    <img id="modalImg" src="" alt="">
+                    <time id="modalDate"></time>
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalText"></p>
+                </div>
+            </div>
+
             <section class="section_news_container">
                 <h1 class="news_header">Новости</h1>
                 <div class="news_articles_container">
-                    <article class="news_article_container">
+                    <article class="news_article_container" data-id="1">
                         <img class="news_img" src="assets/news_img.png" alt="news_img">
                         <div class="news_info_container">
-                            <time datetime="2026-07-14">14 июля 2026</time>
-                            <h4 class="h4-bold">Заголовок новости заголовок новости</h4>
-                            <p>Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание...</p>
+                            <time></time>
+                            <h4 class="h4-bold"></h4>
+                            <p></p>
                         </div>
                     </article>
-                    <article class="news_article_container">
+                    <article class="news_article_container" data-id="2">
                         <img class="news_img" src="assets/news_img.png" alt="news_img">
                         <div class="news_info_container">
-                            <time datetime="2026-07-14">14 июля 2026</time>
-                            <h4 class="h4-bold">Заголовок новости заголовок новости</h4>
-                            <p>Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание...</p>
+                            <time></time>
+                            <h4 class="h4-bold"></h4>
+                            <p></p>
                         </div>
                     </article>
-                    <article class="news_article_container">
+                    <article class="news_article_container" data-id="3">
                         <img class="news_img" src="assets/news_img.png" alt="news_img">
                         <div class="news_info_container">
-                            <time datetime="2026-07-14">14 июля 2026</time>
-                            <h4 class="h4-bold">Заголовок новости заголовок новости</h4>
-                            <p>Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание...</p>
+                            <time></time>
+                            <h4 class="h4-bold"></h4>
+                            <p></p>
                         </div>
                     </article>
-                    <article class="news_article_container">
+                    <article class="news_article_container" data-id="4">
                         <img class="news_img" src="assets/news_img.png" alt="news_img">
                         <div class="news_info_container">
-                            <time datetime="2026-07-14">14 июля 2026</time>
-                            <h4 class="h4-bold">Заголовок новости заголовок новости</h4>
-                            <p>Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание...</p>
+                            <time></time>
+                            <h4 class="h4-bold"></h4>
+                            <p></p>
                         </div>
                     </article>
-                    <article class="news_article_container">
+                    <article class="news_article_container" data-id="5">
                         <img class="news_img" src="assets/news_img.png" alt="news_img">
                         <div class="news_info_container">
-                            <time datetime="2026-07-14">14 июля 2026</time>
-                            <h4 class="h4-bold">Заголовок новости заголовок новости</h4>
-                            <p>Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание...</p>
+                            <time></time>
+                            <h4 class="h4-bold"></h4>
+                            <p></p>
                         </div>
                     </article>
-                    <article class="news_article_container">
+                    <article class="news_article_container" data-id="6">
                         <img class="news_img" src="assets/news_img.png" alt="news_img">
                         <div class="news_info_container">
-                            <time datetime="2026-07-14">14 июля 2026</time>
-                            <h4 class="h4-bold">Заголовок новости заголовок новости</h4>
-                            <p>Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание...</p>
+                            <time></time>
+                            <h4 class="h4-bold"></h4>
+                            <p></p>
                         </div>
                     </article>
                 </div>
@@ -112,7 +123,8 @@
                 <ul>
                     <li><a href="tel:+79607825050">+7 (960) 782-50-50</a></li>
                     <li><a href="mailto:ucit@corp.nstu.ru">ucit@corp.nstu.ru</a></li>
-                    <li><a href="https://t.me/ucitorg" target="_blank">t.me/ucitorg</a></li> 
+                    <li><a href="https://t.me/ucitorg" target="_blank">t.me/ucitorg</a></li>
+                    <li><a href="tel:+79607825050" target="_blank">MAX</a></li> 
                 </ul>
             </div>
             <div class="footer_lic">
@@ -120,5 +132,6 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/news.js"></script>
 </body>
 </html>

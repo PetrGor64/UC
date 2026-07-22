@@ -1,6 +1,6 @@
 .top_bar{
-    z-index: 30;
     position: sticky;
+    z-index: 50;
     top: 0;
 }
 
@@ -31,14 +31,13 @@ address {
 
 .contact_info_top_bar{
     display: flex;
-    flex-direction: row;
+    gap: 40px;
+    margin-right: 40px;
 }
 
 .contact_info_top_bar li{
-    margin-right: 40px;
+    margin: 0px;
     list-style: none;
-    width: 170px;
-    height: 48px;
 }
 
 .contact_info_top_bar a{
@@ -67,15 +66,14 @@ address {
 
 .flex_menu{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    height: 30px;
+    align-items: center;
 }
 
 .flex_menu li{
-    margin: 0 20px;
+    margin: 0;
     list-style: none;
-    width: 170px;
-    height: 30px;
 }
 
 .flex_menu a{
@@ -91,3 +89,86 @@ address {
 .flex_menu a:hover{
     color: var(--mg-color);
 }
+
+/* ---------- Планшеты ---------- */
+
+@media (max-width: 1000px){
+
+    .top_bar_container_top_row{
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        border-radius: 0px;
+    }
+
+    .ucit_logo_container{
+        margin: 0;
+    }
+
+    .contact_info_top_bar{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 30px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact_info_top_bar li{
+        margin: 0;
+    }
+
+}
+
+/* ---------- Небольшие планшеты ---------- */
+
+@media (max-width: 768px){
+
+    .top_bar_container_second_row{
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .flex_menu{
+        height: auto;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .flex_menu li{
+        margin: 0;
+    }
+
+}
+
+/* ---------- Телефоны ---------- */
+
+@media (max-width: 576px){
+
+    .top_bar{
+        position: static; /* sticky не всегда удобно на телефонах */
+    }
+
+    .ucit_logo{
+        height: 40px;
+    }
+
+    .contact_info_top_bar{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .flex_menu{
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .flex_menu li{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
