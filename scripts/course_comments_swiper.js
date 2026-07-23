@@ -1,27 +1,31 @@
-document.addEventListener('DOMContentLoaded', () =>{
-    console.log('DOM loaded');
-    console.log(typeof Swiper);
+document.addEventListener('DOMContentLoaded', () => {
 
-    new Swiper('.comments-wrapper',{
+    new Swiper('.comments-wrapper', {
         loop: true,
-        slidesPerView: 4,
-        spaceBetween: 20,
         grabCursor: true,
 
-        navigation:{
+        slidesPerView: 1,
+        spaceBetween: 15,
+
+        navigation: {
             nextEl: '.module_button_next',
             prevEl: '.module_button_prev',
         },
 
-        breakpoints:{
-            500:{
+        breakpoints: {
+
+            768: {
                 slidesPerView: 1,
-                spaceBetween: 15,
+                spaceBetween: 20,
             },
-            1200:{
+
+            1024: {
                 slidesPerView: 2,
-                spaceBetween: 15,
-            }
+                spaceBetween: 20,
+            },
+            
         }
+
     });
+
 });
