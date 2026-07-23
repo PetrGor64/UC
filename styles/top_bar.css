@@ -90,8 +90,6 @@ address {
     color: var(--mg-color);
 }
 
-/* ---------- Планшеты ---------- */
-
 @media (max-width: 1000px){
 
     .top_bar_container_top_row{
@@ -119,7 +117,6 @@ address {
 
 }
 
-/* ---------- Небольшие планшеты ---------- */
 
 @media (max-width: 768px){
 
@@ -141,12 +138,11 @@ address {
 
 }
 
-/* ---------- Телефоны ---------- */
 
 @media (max-width: 576px){
 
     .top_bar{
-        position: static; /* sticky не всегда удобно на телефонах */
+        position: static;
     }
 
     .ucit_logo{

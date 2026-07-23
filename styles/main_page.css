@@ -58,12 +58,15 @@ main {
 .news_articles_container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .news_article_container{
-    width: 410px;
+    flex: 1;
+    max-width: 410px;
+    min-width: 280px;
     background-image: linear-gradient(var(--lb-color),var(--db-color));
     border-radius: 20px;
     overflow: hidden;
@@ -111,7 +114,7 @@ main {
 }
 
 .section_course_info_container{
-    flex: 0 0 850px;
+    flex: 2;
     padding-inline: 40px;
     padding-block: 20px;
     display: flex;
@@ -215,4 +218,134 @@ main {
 
 .comment_header p{
     margin: 0px;
+}
+
+@media (max-width: 1024px){
+
+    .news_articles_container{
+        flex-wrap: wrap;
+    }
+
+    .news_article_container{
+        width: calc(50% - 10px);
+    }
+
+    .section_course_container{
+        flex-direction: column;
+    }
+
+    .section_course_info_container{
+        flex: 1;
+    }
+
+    .section_course_img_container{
+        height: 350px;
+    }
+
+    .comments_slider_container{
+        gap: 10px;
+    }
+
+    .slider_button_container{
+        width: 60px;
+        flex: 0 0 60px;
+    }
+
+    .module_button_prev,
+    .module_button_next{
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+
+@media (max-width: 768px){
+
+    h2{
+        font-size: 28px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    .h4-bold{
+        font-size: 20px;
+    }
+
+    .page_container{
+        padding-inline: 5px;
+    }
+
+    .section_top_container{
+        padding-inline: 20px;
+        border-radius: 25px;
+    }
+
+    .section_news_container{
+        padding-inline: 15px;
+        border-radius: 25px;
+    }
+
+    .news_header,
+    .section_comments_header{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .news_articles_container{
+        flex-direction: column;
+    }
+
+    .news_article_container{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .news_link_container a{
+        width: 100%;
+        max-width: 250px;
+        font-size: 20px;
+    }
+
+    .section_course_container{
+        border-radius: 25px;
+    }
+
+    .section_course_info_container{
+        padding-inline: 20px;
+    }
+
+    .section_course_img_container{
+        height: 250px;
+    }
+
+    .course_link{
+        width: 100%;
+        max-width: 300px;
+        font-size: 20px;
+    }
+
+    .slider_button_container{
+        display: none;
+    }
+
+    .comments_slider_container{
+        display: block;
+        width: 100%;
+    }
+
+    .comments-wrapper{
+        width: 100%;
+    }
+
+    .course_comment{
+        padding: 20px;
+    }
+
 }

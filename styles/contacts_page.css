@@ -1,4 +1,4 @@
-body {
+body{
     background-color: var(--dg-color);
     min-height: 100vh;
     display: flex;
@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 
-main {
+main{
     margin-top: 10px;
     margin-bottom: 30px;
     flex: 1;
@@ -20,7 +20,7 @@ main {
 }
 
 .h1_contacts{
-    margin-left: 50px;
+    margin-left: 80px;
     margin-bottom: 20px;
 }
 
@@ -90,17 +90,65 @@ main {
     height: 28px;
 }
 
-.map_container{
+.map_block{
     flex: 1 1 500px;
     width: 100%;
-    max-width: 800px;
-    aspect-ratio: 16 / 9;
-    margin: auto;
+    max-width: 750px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.map_container{
+    width: 100%;
+    height: 420px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     border-radius: 20px;
     overflow: hidden;
+}
+
+.map_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+    min-width: 220px;
+    padding: 14px 28px;
+    margin: 0 auto;
+
+    background-color: var(--mg-color);
+    color: var(--w-color);
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all .3s ease;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+.map_button:link,
+.map_button:visited{
+    color: var(--w-color);
+    background-color: var(--mg-color);
+}
+
+.map_button:hover{
+    opacity: .85;
+}
+
+.map_button:active{
+    transform: scale(.98);
+}
+
+.map_button:focus,
+.map_button:focus-visible{
+    outline: none;
 }
 
 @media (max-width: 900px){
@@ -125,10 +173,14 @@ main {
         max-width: 600px;
     }
 
-    .map_container{
+    .map_block{
+        flex: none;
         width: 100%;
         max-width: 600px;
-        height: 350px;
+    }
+
+    .map_container{
+        height: 300px;
     }
 
 }
@@ -148,7 +200,6 @@ main {
         font-size: 28px;
     }
 
-
     .contact_container{
         height: auto;
         min-height: 60px;
@@ -156,19 +207,16 @@ main {
         align-items: center;
     }
 
-
     .contact_icon_container{
         min-width: 45px;
         width: 45px;
         height: 45px;
     }
 
-
     .contact_icon{
         width: 22px;
         height: 22px;
     }
-
 
     .contact_container a,
     .contact_container{
@@ -176,9 +224,13 @@ main {
         line-height: 1.4;
     }
 
+    .map_block{
+        flex: none;
+        gap: 15px;
+    }
 
     .map_container{
-        height: 300px;
+        height: 250px;
         border-radius: 10px;
     }
 
